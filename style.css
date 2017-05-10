@@ -10,7 +10,7 @@ body{
 header{
   background: black;
   color: white;
-  pdding: 10px;
+  padding: 10px;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -27,6 +27,11 @@ header img{
 
 header a{
   color: white;
+}
+
+
+nav span{
+padding: 12px 12px;
 }
 
 #mission{
@@ -46,6 +51,13 @@ align-items: center;
   background-color: black;
 }
 
+.flex-container{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+
 #store.item img{
   width: 300px;
   height: 200px;
@@ -55,14 +67,43 @@ align-items: center;
   font-weight: bold;
 }
 
-#locations{
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
-  background-size: cover;
-  background-position: center;
+.item{
+  padding: 5px;
 }
 
-#locations .location{
-  opacity: 1;
+.item img{
+  height: 200px;
+  margin: 10px;
+  display: block;
+}
+
+.item span{
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#locations{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  height: 500px;
+  padding-top: 70px;
+}
+
+#locations .flex-container{
+  margin: auto;
+  width: 1100px;
+}
+
+.location{
+  opacity: 1.0;
+  padding: 10px;
+  margin: 5px 20px;
+  background-color: black;
+  flex-basis: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #store{
